@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+<style>
+.search-layer {
+  top: 100px;
+  left: .5em;
+}
+.ol-touch .search-layer {
+  top: 130px;
+}
+</style>
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control button {
+            background-color: #f8f8f8 !important;
+            color: #000000 !important;
+            border-radius: 0px !important;
+        }
+        .ol-zoom, .geolocate, .gcd-gl-control .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 3px !important;
+        }
+        .ol-scale-line {
+            background: none !important;
+        }
+        .ol-scale-line-inner {
+            border: 2px solid #f8f8f8 !important;
+            border-top: none !important;
+            background: rgba(255, 255, 255, 0.5) !important;
+            color: black !important;
+        }
+        </style>
+<style>
+.tooltip {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  color: white;
+  padding: 4px 8px;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+.tooltip-measure {
+  opacity: 1;
+  font-weight: bold;
+}
+.tooltip-static {
+  background-color: #ffcc33;
+  color: black;
+  border: 1px solid white;
+}
+.tooltip-measure:before,
+.tooltip-static:before {
+  border-top: 6px solid rgba(0, 0, 0, 0.5);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  margin-left: -7px;
+  left: 50%;
+}
+.tooltip-static:before {
+  border-top-color: #ffcc33;
+}
+.measure-control {
+  top: 65px;
+  left: .5em;
+  display: flex;
+}
+.ol-touch .measure-control {
+  top: 80px;
+}
+.measure-control label {
+  padding: 1px;
+  padding-right: 4px;
+}
+</style>
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/MLAUZones_2.js"></script><script src="layers/Zinc_3.js"></script><script src="layers/Zea_4.js"></script><script src="layers/Xylene_5.js"></script><script src="layers/WindSpeed_6.js"></script><script src="layers/WindSpeedmin_7.js"></script><script src="layers/WindSpeedmax_8.js"></script><script src="layers/WindDirection_9.js"></script><script src="layers/WindDirectionstd_10.js"></script><script src="layers/WCUR_11.js"></script><script src="layers/WaterSurfaceHeight_12.js"></script><script src="layers/Viola_13.js"></script><script src="layers/VCURnorthwardvelocity_14.js"></script><script src="layers/UCUReastwardvelocity_15.js"></script><script src="layers/Turbidity_16.js"></script><script src="layers/TSSorganic_17.js"></script><script src="layers/TSSinorganic_18.js"></script><script src="layers/TRHgtC34C40_19.js"></script><script src="layers/TRHgtC16C34_20.js"></script><script src="layers/TRHgtC10C16_21.js"></script><script src="layers/TRHC6C10_22.js"></script><script src="layers/TPHC6C9_23.js"></script><script src="layers/TPHC29C36_24.js"></script><script src="layers/TPHC15C28_25.js"></script><script src="layers/TPHC10C14_26.js"></script><script src="layers/TotalTRHs_27.js"></script><script src="layers/TotalTPH_28.js"></script><script src="layers/TotalSuspendedSolids_29.js"></script><script src="layers/TotalPhosphorus_30.js"></script><script src="layers/TotalNitrogen_31.js"></script><script src="layers/TotalKjeldahlNitrogen_32.js"></script><script src="layers/TotalBTEX_33.js"></script><script src="layers/TotalAlkalinity_34.js"></script><script src="layers/Toluene_35.js"></script><script src="layers/Tilt_36.js"></script><script src="layers/Temperature_37.js"></script><script src="layers/Synechococcus_38.js"></script><script src="layers/SurfaceSolarIrradiance_39.js"></script><script src="layers/SurfaceSolarIrradiancestd_40.js"></script><script src="layers/SurfaceSolarIrradiancemin_41.js"></script><script src="layers/SurfaceSolarIrradiancemax_42.js"></script><script src="layers/SurfacePhotosyntheticallyActivePhotonFlux_43.js"></script><script src="layers/SurfacePhotosyntheticallyActivePhotonFluxstd_44.js"></script><script src="layers/SurfacePhotosyntheticallyActivePhotonFluxmin_45.js"></script><script src="layers/SurfacePhotosyntheticallyActivePhotonFluxmax_46.js"></script><script src="layers/StationLevelPressure_47.js"></script><script src="layers/StationLevelPressurestd_48.js"></script><script src="layers/StationLevelPressuremin_49.js"></script><script src="layers/StationLevelPressuremax_50.js"></script><script src="layers/StageHeight_51.js"></script><script src="layers/StageHeightCTF_52.js"></script><script src="layers/StageHeightCTFmin_53.js"></script><script src="layers/StageHeightCTFmax_54.js"></script><script src="layers/StageHeightmin_55.js"></script><script src="layers/StageHeightmax_56.js"></script><script src="layers/SPEED_OF_SOUND_57.js"></script><script src="layers/SpectralRadiativeFluxWL700uW_58.js"></script><script src="layers/SpectralRadiativeFluxWL699uW_59.js"></script><script src="layers/SpectralRadiativeFluxWL660uW_60.js"></script><script src="layers/SpectralRadiativeFluxWL656uW_61.js"></script><script src="layers/SpectralRadiativeFluxWL635uW_62.js"></script><script src="layers/SpectralRadiativeFluxWL628uW_63.js"></script><script src="layers/SpectralRadiativeFluxWL590uW_64.js"></script><script src="layers/SpectralRadiativeFluxWL554uW_65.js"></script><script src="layers/SpectralRadiativeFluxWL550uW_66.js"></script><script src="layers/SpectralRadiativeFluxWL524uW_67.js"></script><script src="layers/SpectralRadiativeFluxWL510uW_68.js"></script><script src="layers/SpectralRadiativeFluxWL490uW_69.js"></script><script src="layers/SpectralRadiativeFluxWL470uW_70.js"></script><script src="layers/SpectralRadiativeFluxWL448uW_71.js"></script><script src="layers/SpectralRadiativeFluxWL440uW_72.js"></script><script src="layers/SpectralRadiativeFluxWL410uW_73.js"></script><script src="layers/SpectralRadiativeFluxWL398uW_74.js"></script><script src="layers/SpectralPhotonFluxWL699umol_75.js"></script><script src="layers/SpectralPhotonFluxWL656umol_76.js"></script><script src="layers/SpectralPhotonFluxWL628umol_77.js"></script><script src="layers/SpectralPhotonFluxWL590umol_78.js"></script><script src="layers/SpectralPhotonFluxWL554umol_79.js"></script><script src="layers/SpectralPhotonFluxWL524umol_80.js"></script><script src="layers/SpectralPhotonFluxWL470umol_81.js"></script><script src="layers/SpectralPhotonFluxWL448umol_82.js"></script><script src="layers/SpectralPhotonFluxWL398umol_83.js"></script><script src="layers/SpecificConductivity_84.js"></script><script src="layers/Silver_85.js"></script><script src="layers/SecchiDepth_86.js"></script><script src="layers/Salinity_87.js"></script><script src="layers/ROLL_88.js"></script><script src="layers/ReactiveSilica_89.js"></script><script src="layers/PyrophytinA_90.js"></script><script src="layers/PyrophideA_91.js"></script><script src="layers/Prochlorococcus_92.js"></script><script src="layers/PRESSURE_SENSOR_DEPTH_93.js"></script><script src="layers/PRESSURE_94.js"></script><script src="layers/PresentWeatherinCode_95.js"></script><script src="layers/Pras_96.js"></script><script src="layers/PosidoniaSinuosaTotalBiomass_97.js"></script><script src="layers/PosidoniaSinuosaDryWeight_98.js"></script><script src="layers/PosidoniaSinuosaCount_99.js"></script><script src="layers/PosidoniaSinuosaBelowGroundBiomass_100.js"></script><script src="layers/PosidoniaSinuosaAboveGroundBiomass_101.js"></script><script src="layers/Pitch_102.js"></script><script src="layers/Picoeukaryotes_103.js"></script><script src="layers/PhytinB_104.js"></script><script src="layers/PhytinA_105.js"></script><script src="layers/PhideA_106.js"></script><script src="layers/Phaeophytina_107.js"></script><script src="layers/pH_108.js"></script><script src="layers/Perid_109.js"></script><script src="layers/ParticulateOrganicCarbon_110.js"></script><script src="layers/OrganicPhosphorus_111.js"></script><script src="layers/OrganicNitrogen_112.js"></script><script src="layers/O2Saturation_113.js"></script><script src="layers/Nitrite_114.js"></script><script src="layers/Nitrate_115.js"></script><script src="layers/Nickel_116.js"></script><script src="layers/Neo_117.js"></script><script src="layers/MgDvp_118.js"></script><script src="layers/mpXylene_119.js"></script><script src="layers/Lyco_120.js"></script><script src="layers/Lut_121.js"></script><script src="layers/LoggerTemperature_122.js"></script><script src="layers/LightAttenuationCoefficient_123.js"></script><script src="layers/Lead_124.js"></script><script src="layers/Ketohexfuco_125.js"></script><script src="layers/Hexfuco_126.js"></script><script src="layers/HEADING_127.js"></script><script src="layers/Gyro_128.js"></script><script src="layers/Fuco_129.js"></script><script src="layers/Fluorescence_130.js"></script><script src="layers/FilteredCopper_131.js"></script><script src="layers/FilterableReactivePhosphate_132.js"></script><script src="layers/Ethylbenzene_133.js"></script><script src="layers/Echin_134.js"></script><script src="layers/DvCphlB_135.js"></script><script src="layers/DvCphlBCphlB_136.js"></script><script src="layers/DvCphlA_137.js"></script><script src="layers/DvCphlACphlA_138.js"></script><script src="layers/DissolvedOxygen_139.js"></script><script src="layers/DissolvedOrganicNitrogen_140.js"></script><script src="layers/DissolvedOrganicCarbon_141.js"></script><script src="layers/DissolvedInorganicCarbon_142.js"></script><script src="layers/Discharge_143.js"></script><script src="layers/Dischargemin_144.js"></script><script src="layers/Dischargemax_145.js"></script><script src="layers/Dino_146.js"></script><script src="layers/Diato_147.js"></script><script src="layers/Diadino_148.js"></script><script src="layers/Diadchr_149.js"></script><script src="layers/Depth_150.js"></script><script src="layers/Density_151.js"></script><script src="layers/DENSITYANOMALY_152.js"></script><script src="layers/DailySurfacePhotosyntheticallyActivePhotonFlux_153.js"></script><script src="layers/DailySolarIrradiance_154.js"></script><script src="layers/DailyPhotosyntheticallyActivePhotonFlux_155.js"></script><script src="layers/DailyDischarge_156.js"></script><script src="layers/CphlideA_157.js"></script><script src="layers/CphlC3_158.js"></script><script src="layers/CphlC2_159.js"></script><script src="layers/CphlC1_160.js"></script><script src="layers/CphlB_161.js"></script><script src="layers/CphlA_162.js"></script><script src="layers/Copper_163.js"></script><script src="layers/CloudCover_164.js"></script><script src="layers/Chlorophyllc_165.js"></script><script src="layers/Chlorophyllb_166.js"></script><script src="layers/Chlorophylla_167.js"></script><script src="layers/ChlorophyllSampleVolume_168.js"></script><script src="layers/CeilometerSkyClearFlag_169.js"></script><script src="layers/Cantha_170.js"></script><script src="layers/Butfuco_171.js"></script><script src="layers/BottomDepth_172.js"></script><script src="layers/Benzene_173.js"></script><script src="layers/Asta_174.js"></script><script src="layers/Anth_175.js"></script><script src="layers/AMPLITUDE3_176.js"></script><script src="layers/AMPLITUDE2_177.js"></script><script src="layers/AMPLITUDE1_178.js"></script><script src="layers/Ammonium_179.js"></script><script src="layers/AlphaBetaCar_180.js"></script><script src="layers/Allo_181.js"></script><script src="layers/AirTemperature_182.js"></script><script src="layers/ACCELERATIONZ_183.js"></script><script src="layers/ACCELERATIONY_184.js"></script><script src="layers/ACCELERATIONX_185.js"></script>
+        <script src="styles/MLAUZones_2_style.js"></script><script src="styles/Zinc_3_style.js"></script><script src="styles/Zea_4_style.js"></script><script src="styles/Xylene_5_style.js"></script><script src="styles/WindSpeed_6_style.js"></script><script src="styles/WindSpeedmin_7_style.js"></script><script src="styles/WindSpeedmax_8_style.js"></script><script src="styles/WindDirection_9_style.js"></script><script src="styles/WindDirectionstd_10_style.js"></script><script src="styles/WCUR_11_style.js"></script><script src="styles/WaterSurfaceHeight_12_style.js"></script><script src="styles/Viola_13_style.js"></script><script src="styles/VCURnorthwardvelocity_14_style.js"></script><script src="styles/UCUReastwardvelocity_15_style.js"></script><script src="styles/Turbidity_16_style.js"></script><script src="styles/TSSorganic_17_style.js"></script><script src="styles/TSSinorganic_18_style.js"></script><script src="styles/TRHgtC34C40_19_style.js"></script><script src="styles/TRHgtC16C34_20_style.js"></script><script src="styles/TRHgtC10C16_21_style.js"></script><script src="styles/TRHC6C10_22_style.js"></script><script src="styles/TPHC6C9_23_style.js"></script><script src="styles/TPHC29C36_24_style.js"></script><script src="styles/TPHC15C28_25_style.js"></script><script src="styles/TPHC10C14_26_style.js"></script><script src="styles/TotalTRHs_27_style.js"></script><script src="styles/TotalTPH_28_style.js"></script><script src="styles/TotalSuspendedSolids_29_style.js"></script><script src="styles/TotalPhosphorus_30_style.js"></script><script src="styles/TotalNitrogen_31_style.js"></script><script src="styles/TotalKjeldahlNitrogen_32_style.js"></script><script src="styles/TotalBTEX_33_style.js"></script><script src="styles/TotalAlkalinity_34_style.js"></script><script src="styles/Toluene_35_style.js"></script><script src="styles/Tilt_36_style.js"></script><script src="styles/Temperature_37_style.js"></script><script src="styles/Synechococcus_38_style.js"></script><script src="styles/SurfaceSolarIrradiance_39_style.js"></script><script src="styles/SurfaceSolarIrradiancestd_40_style.js"></script><script src="styles/SurfaceSolarIrradiancemin_41_style.js"></script><script src="styles/SurfaceSolarIrradiancemax_42_style.js"></script><script src="styles/SurfacePhotosyntheticallyActivePhotonFlux_43_style.js"></script><script src="styles/SurfacePhotosyntheticallyActivePhotonFluxstd_44_style.js"></script><script src="styles/SurfacePhotosyntheticallyActivePhotonFluxmin_45_style.js"></script><script src="styles/SurfacePhotosyntheticallyActivePhotonFluxmax_46_style.js"></script><script src="styles/StationLevelPressure_47_style.js"></script><script src="styles/StationLevelPressurestd_48_style.js"></script><script src="styles/StationLevelPressuremin_49_style.js"></script><script src="styles/StationLevelPressuremax_50_style.js"></script><script src="styles/StageHeight_51_style.js"></script><script src="styles/StageHeightCTF_52_style.js"></script><script src="styles/StageHeightCTFmin_53_style.js"></script><script src="styles/StageHeightCTFmax_54_style.js"></script><script src="styles/StageHeightmin_55_style.js"></script><script src="styles/StageHeightmax_56_style.js"></script><script src="styles/SPEED_OF_SOUND_57_style.js"></script><script src="styles/SpectralRadiativeFluxWL700uW_58_style.js"></script><script src="styles/SpectralRadiativeFluxWL699uW_59_style.js"></script><script src="styles/SpectralRadiativeFluxWL660uW_60_style.js"></script><script src="styles/SpectralRadiativeFluxWL656uW_61_style.js"></script><script src="styles/SpectralRadiativeFluxWL635uW_62_style.js"></script><script src="styles/SpectralRadiativeFluxWL628uW_63_style.js"></script><script src="styles/SpectralRadiativeFluxWL590uW_64_style.js"></script><script src="styles/SpectralRadiativeFluxWL554uW_65_style.js"></script><script src="styles/SpectralRadiativeFluxWL550uW_66_style.js"></script><script src="styles/SpectralRadiativeFluxWL524uW_67_style.js"></script><script src="styles/SpectralRadiativeFluxWL510uW_68_style.js"></script><script src="styles/SpectralRadiativeFluxWL490uW_69_style.js"></script><script src="styles/SpectralRadiativeFluxWL470uW_70_style.js"></script><script src="styles/SpectralRadiativeFluxWL448uW_71_style.js"></script><script src="styles/SpectralRadiativeFluxWL440uW_72_style.js"></script><script src="styles/SpectralRadiativeFluxWL410uW_73_style.js"></script><script src="styles/SpectralRadiativeFluxWL398uW_74_style.js"></script><script src="styles/SpectralPhotonFluxWL699umol_75_style.js"></script><script src="styles/SpectralPhotonFluxWL656umol_76_style.js"></script><script src="styles/SpectralPhotonFluxWL628umol_77_style.js"></script><script src="styles/SpectralPhotonFluxWL590umol_78_style.js"></script><script src="styles/SpectralPhotonFluxWL554umol_79_style.js"></script><script src="styles/SpectralPhotonFluxWL524umol_80_style.js"></script><script src="styles/SpectralPhotonFluxWL470umol_81_style.js"></script><script src="styles/SpectralPhotonFluxWL448umol_82_style.js"></script><script src="styles/SpectralPhotonFluxWL398umol_83_style.js"></script><script src="styles/SpecificConductivity_84_style.js"></script><script src="styles/Silver_85_style.js"></script><script src="styles/SecchiDepth_86_style.js"></script><script src="styles/Salinity_87_style.js"></script><script src="styles/ROLL_88_style.js"></script><script src="styles/ReactiveSilica_89_style.js"></script><script src="styles/PyrophytinA_90_style.js"></script><script src="styles/PyrophideA_91_style.js"></script><script src="styles/Prochlorococcus_92_style.js"></script><script src="styles/PRESSURE_SENSOR_DEPTH_93_style.js"></script><script src="styles/PRESSURE_94_style.js"></script><script src="styles/PresentWeatherinCode_95_style.js"></script><script src="styles/Pras_96_style.js"></script><script src="styles/PosidoniaSinuosaTotalBiomass_97_style.js"></script><script src="styles/PosidoniaSinuosaDryWeight_98_style.js"></script><script src="styles/PosidoniaSinuosaCount_99_style.js"></script><script src="styles/PosidoniaSinuosaBelowGroundBiomass_100_style.js"></script><script src="styles/PosidoniaSinuosaAboveGroundBiomass_101_style.js"></script><script src="styles/Pitch_102_style.js"></script><script src="styles/Picoeukaryotes_103_style.js"></script><script src="styles/PhytinB_104_style.js"></script><script src="styles/PhytinA_105_style.js"></script><script src="styles/PhideA_106_style.js"></script><script src="styles/Phaeophytina_107_style.js"></script><script src="styles/pH_108_style.js"></script><script src="styles/Perid_109_style.js"></script><script src="styles/ParticulateOrganicCarbon_110_style.js"></script><script src="styles/OrganicPhosphorus_111_style.js"></script><script src="styles/OrganicNitrogen_112_style.js"></script><script src="styles/O2Saturation_113_style.js"></script><script src="styles/Nitrite_114_style.js"></script><script src="styles/Nitrate_115_style.js"></script><script src="styles/Nickel_116_style.js"></script><script src="styles/Neo_117_style.js"></script><script src="styles/MgDvp_118_style.js"></script><script src="styles/mpXylene_119_style.js"></script><script src="styles/Lyco_120_style.js"></script><script src="styles/Lut_121_style.js"></script><script src="styles/LoggerTemperature_122_style.js"></script><script src="styles/LightAttenuationCoefficient_123_style.js"></script><script src="styles/Lead_124_style.js"></script><script src="styles/Ketohexfuco_125_style.js"></script><script src="styles/Hexfuco_126_style.js"></script><script src="styles/HEADING_127_style.js"></script><script src="styles/Gyro_128_style.js"></script><script src="styles/Fuco_129_style.js"></script><script src="styles/Fluorescence_130_style.js"></script><script src="styles/FilteredCopper_131_style.js"></script><script src="styles/FilterableReactivePhosphate_132_style.js"></script><script src="styles/Ethylbenzene_133_style.js"></script><script src="styles/Echin_134_style.js"></script><script src="styles/DvCphlB_135_style.js"></script><script src="styles/DvCphlBCphlB_136_style.js"></script><script src="styles/DvCphlA_137_style.js"></script><script src="styles/DvCphlACphlA_138_style.js"></script><script src="styles/DissolvedOxygen_139_style.js"></script><script src="styles/DissolvedOrganicNitrogen_140_style.js"></script><script src="styles/DissolvedOrganicCarbon_141_style.js"></script><script src="styles/DissolvedInorganicCarbon_142_style.js"></script><script src="styles/Discharge_143_style.js"></script><script src="styles/Dischargemin_144_style.js"></script><script src="styles/Dischargemax_145_style.js"></script><script src="styles/Dino_146_style.js"></script><script src="styles/Diato_147_style.js"></script><script src="styles/Diadino_148_style.js"></script><script src="styles/Diadchr_149_style.js"></script><script src="styles/Depth_150_style.js"></script><script src="styles/Density_151_style.js"></script><script src="styles/DENSITYANOMALY_152_style.js"></script><script src="styles/DailySurfacePhotosyntheticallyActivePhotonFlux_153_style.js"></script><script src="styles/DailySolarIrradiance_154_style.js"></script><script src="styles/DailyPhotosyntheticallyActivePhotonFlux_155_style.js"></script><script src="styles/DailyDischarge_156_style.js"></script><script src="styles/CphlideA_157_style.js"></script><script src="styles/CphlC3_158_style.js"></script><script src="styles/CphlC2_159_style.js"></script><script src="styles/CphlC1_160_style.js"></script><script src="styles/CphlB_161_style.js"></script><script src="styles/CphlA_162_style.js"></script><script src="styles/Copper_163_style.js"></script><script src="styles/CloudCover_164_style.js"></script><script src="styles/Chlorophyllc_165_style.js"></script><script src="styles/Chlorophyllb_166_style.js"></script><script src="styles/Chlorophylla_167_style.js"></script><script src="styles/ChlorophyllSampleVolume_168_style.js"></script><script src="styles/CeilometerSkyClearFlag_169_style.js"></script><script src="styles/Cantha_170_style.js"></script><script src="styles/Butfuco_171_style.js"></script><script src="styles/BottomDepth_172_style.js"></script><script src="styles/Benzene_173_style.js"></script><script src="styles/Asta_174_style.js"></script><script src="styles/Anth_175_style.js"></script><script src="styles/AMPLITUDE3_176_style.js"></script><script src="styles/AMPLITUDE2_177_style.js"></script><script src="styles/AMPLITUDE1_178_style.js"></script><script src="styles/Ammonium_179_style.js"></script><script src="styles/AlphaBetaCar_180_style.js"></script><script src="styles/Allo_181_style.js"></script><script src="styles/AirTemperature_182_style.js"></script><script src="styles/ACCELERATIONZ_183_style.js"></script><script src="styles/ACCELERATIONY_184_style.js"></script><script src="styles/ACCELERATIONX_185_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
