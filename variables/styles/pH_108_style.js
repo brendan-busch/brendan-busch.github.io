@@ -17,8 +17,8 @@ var style_pH_108 = function(feature, resolution){
     var offsetX = 8;
     var offsetY = 3;
     var placement = 'point';
-    if (feature.get("Station_ID") !== null) {
-        labelText = String(feature.get("Station_ID"));
+    if (feature.get("Label") !== null) {
+        labelText = String(feature.get("Label"));
     }
     var style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 4.0 + size,
