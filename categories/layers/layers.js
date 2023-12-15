@@ -192,15 +192,15 @@ var lyr_EcologyBenthic_13 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/EcologyBenthic_13.png" /> Ecology (Benthic)'
             });
-var group_DataCategories = new ol.layer.Group({
+var group_DataCategory = new ol.layer.Group({
                                 layers: [lyr_WaterQualityPhysChm_3,lyr_WaterQualityNutrient_4,lyr_WaterQualityLight_5,lyr_WaterQualityContaminants_6,lyr_Misc_7,lyr_Meteorology_8,lyr_Light_9,lyr_Hydrology_10,lyr_Hydrodynamics_11,lyr_EcologyPlanktonic_12,lyr_EcologyBenthic_13,],
-                                title: "Data Categories"});
+                                title: "Data Category"});
 var group_Basemaps = new ol.layer.Group({
                                 layers: [lyr_GoogleSatellite_0,lyr_ESRIGraylight_1,lyr_MLAUZones_2,],
                                 title: "Basemaps"});
 
 lyr_GoogleSatellite_0.setVisible(true);lyr_ESRIGraylight_1.setVisible(true);lyr_MLAUZones_2.setVisible(true);lyr_WaterQualityPhysChm_3.setVisible(true);lyr_WaterQualityNutrient_4.setVisible(true);lyr_WaterQualityLight_5.setVisible(true);lyr_WaterQualityContaminants_6.setVisible(true);lyr_Misc_7.setVisible(true);lyr_Meteorology_8.setVisible(true);lyr_Light_9.setVisible(true);lyr_Hydrology_10.setVisible(true);lyr_Hydrodynamics_11.setVisible(true);lyr_EcologyPlanktonic_12.setVisible(true);lyr_EcologyBenthic_13.setVisible(true);
-var layersList = [group_Basemaps,group_DataCategories];
+var layersList = [group_Basemaps,group_DataCategory];
 lyr_MLAUZones_2.set('fieldAliases', {'Unit_Name': 'Unit_Name', 'Name': 'Name', 'Plot_Order': 'Plot_Order', 'BP_Region': 'BP_Region', 'BP_Order': 'BP_Order', });
 lyr_WaterQualityPhysChm_3.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
 lyr_WaterQualityNutrient_4.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
@@ -224,7 +224,7 @@ lyr_Light_9.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_
 lyr_Hydrology_10.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
 lyr_Hydrodynamics_11.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
 lyr_EcologyPlanktonic_12.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
-lyr_EcologyBenthic_13.set('fieldImages', {'Agency_Name': 'TextEdit', 'Program_Name': 'TextEdit', 'Station_ID': 'TextEdit', 'Site_Description': 'TextEdit', 'Tag': 'TextEdit', 'mAHD': 'TextEdit', 'Lat': 'TextEdit', 'Lon': 'TextEdit', 'Label': 'TextEdit', });
+lyr_EcologyBenthic_13.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
 lyr_MLAUZones_2.set('fieldLabels', {});
 lyr_WaterQualityPhysChm_3.set('fieldLabels', {});
 lyr_WaterQualityNutrient_4.set('fieldLabels', {});

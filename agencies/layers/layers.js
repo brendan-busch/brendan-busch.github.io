@@ -178,155 +178,197 @@ var lyr_IMOSANMNCTD_12 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/IMOSANMNCTD_12.png" /> IMOS-ANMN-CTD'
             });
-var format_FPAMQMP_13 = new ol.format.GeoJSON();
-var features_FPAMQMP_13 = format_FPAMQMP_13.readFeatures(json_FPAMQMP_13, 
+var format_IMOSANMNADCP_13 = new ol.format.GeoJSON();
+var features_IMOSANMNADCP_13 = format_IMOSANMNADCP_13.readFeatures(json_IMOSANMNADCP_13, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_FPAMQMP_13 = new ol.source.Vector({
+var jsonSource_IMOSANMNADCP_13 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_FPAMQMP_13.addFeatures(features_FPAMQMP_13);
-var lyr_FPAMQMP_13 = new ol.layer.Vector({
+jsonSource_IMOSANMNADCP_13.addFeatures(features_IMOSANMNADCP_13);
+var lyr_IMOSANMNADCP_13 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_FPAMQMP_13, 
-                style: style_FPAMQMP_13,
+                source:jsonSource_IMOSANMNADCP_13, 
+                style: style_IMOSANMNADCP_13,
                 interactive: true,
-                title: '<img src="styles/legend/FPAMQMP_13.png" /> FPA-MQMP'
+                title: '<img src="styles/legend/IMOSANMNADCP_13.png" /> IMOS-ANMN-ADCP'
             });
-var format_DWERSWANEST_14 = new ol.format.GeoJSON();
-var features_DWERSWANEST_14 = format_DWERSWANEST_14.readFeatures(json_DWERSWANEST_14, 
+var format_FPAMQMP_14 = new ol.format.GeoJSON();
+var features_FPAMQMP_14 = format_FPAMQMP_14.readFeatures(json_FPAMQMP_14, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_DWERSWANEST_14 = new ol.source.Vector({
+var jsonSource_FPAMQMP_14 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_DWERSWANEST_14.addFeatures(features_DWERSWANEST_14);
-var lyr_DWERSWANEST_14 = new ol.layer.Vector({
+jsonSource_FPAMQMP_14.addFeatures(features_FPAMQMP_14);
+var lyr_FPAMQMP_14 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_DWERSWANEST_14, 
-                style: style_DWERSWANEST_14,
+                source:jsonSource_FPAMQMP_14, 
+                style: style_FPAMQMP_14,
                 interactive: true,
-                title: '<img src="styles/legend/DWERSWANEST_14.png" /> DWER-SWANEST'
+                title: '<img src="styles/legend/FPAMQMP_14.png" /> FPA-MQMP'
             });
-var format_DWERSWANCATCH_15 = new ol.format.GeoJSON();
-var features_DWERSWANCATCH_15 = format_DWERSWANCATCH_15.readFeatures(json_DWERSWANCATCH_15, 
+var format_DWERSWANEST_15 = new ol.format.GeoJSON();
+var features_DWERSWANEST_15 = format_DWERSWANEST_15.readFeatures(json_DWERSWANEST_15, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_DWERSWANCATCH_15 = new ol.source.Vector({
+var jsonSource_DWERSWANEST_15 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_DWERSWANCATCH_15.addFeatures(features_DWERSWANCATCH_15);
-var lyr_DWERSWANCATCH_15 = new ol.layer.Vector({
+jsonSource_DWERSWANEST_15.addFeatures(features_DWERSWANEST_15);
+var lyr_DWERSWANEST_15 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_DWERSWANCATCH_15, 
-                style: style_DWERSWANCATCH_15,
+                source:jsonSource_DWERSWANEST_15, 
+                style: style_DWERSWANEST_15,
                 interactive: true,
-                title: '<img src="styles/legend/DWERSWANCATCH_15.png" /> DWER-SWANCATCH'
+                title: '<img src="styles/legend/DWERSWANEST_15.png" /> DWER-SWANEST'
             });
-var format_DWERCSMWQ_16 = new ol.format.GeoJSON();
-var features_DWERCSMWQ_16 = format_DWERCSMWQ_16.readFeatures(json_DWERCSMWQ_16, 
+var format_DWERSWANCATCH_16 = new ol.format.GeoJSON();
+var features_DWERSWANCATCH_16 = format_DWERSWANCATCH_16.readFeatures(json_DWERSWANCATCH_16, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_DWERCSMWQ_16 = new ol.source.Vector({
+var jsonSource_DWERSWANCATCH_16 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_DWERCSMWQ_16.addFeatures(features_DWERCSMWQ_16);
-var lyr_DWERCSMWQ_16 = new ol.layer.Vector({
+jsonSource_DWERSWANCATCH_16.addFeatures(features_DWERSWANCATCH_16);
+var lyr_DWERSWANCATCH_16 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_DWERCSMWQ_16, 
-                style: style_DWERCSMWQ_16,
+                source:jsonSource_DWERSWANCATCH_16, 
+                style: style_DWERSWANCATCH_16,
                 interactive: true,
-                title: '<img src="styles/legend/DWERCSMWQ_16.png" /> DWER-CSMWQ'
+                title: '<img src="styles/legend/DWERSWANCATCH_16.png" /> DWER-SWANCATCH'
             });
-var format_DWERCSMOORING_17 = new ol.format.GeoJSON();
-var features_DWERCSMOORING_17 = format_DWERCSMOORING_17.readFeatures(json_DWERCSMOORING_17, 
+var format_DWERPHESTREACH_17 = new ol.format.GeoJSON();
+var features_DWERPHESTREACH_17 = format_DWERPHESTREACH_17.readFeatures(json_DWERPHESTREACH_17, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_DWERCSMOORING_17 = new ol.source.Vector({
+var jsonSource_DWERPHESTREACH_17 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_DWERCSMOORING_17.addFeatures(features_DWERCSMOORING_17);
-var lyr_DWERCSMOORING_17 = new ol.layer.Vector({
+jsonSource_DWERPHESTREACH_17.addFeatures(features_DWERPHESTREACH_17);
+var lyr_DWERPHESTREACH_17 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_DWERCSMOORING_17, 
-                style: style_DWERCSMOORING_17,
+                source:jsonSource_DWERPHESTREACH_17, 
+                style: style_DWERPHESTREACH_17,
                 interactive: true,
-                title: '<img src="styles/legend/DWERCSMOORING_17.png" /> DWER-CSMOORING'
+                title: '<img src="styles/legend/DWERPHESTREACH_17.png" /> DWER-PHESTREACH'
             });
-var format_DWERCANEST_18 = new ol.format.GeoJSON();
-var features_DWERCANEST_18 = format_DWERCANEST_18.readFeatures(json_DWERCANEST_18, 
+var format_DWERMURHAR_18 = new ol.format.GeoJSON();
+var features_DWERMURHAR_18 = format_DWERMURHAR_18.readFeatures(json_DWERMURHAR_18, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_DWERCANEST_18 = new ol.source.Vector({
+var jsonSource_DWERMURHAR_18 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_DWERCANEST_18.addFeatures(features_DWERCANEST_18);
-var lyr_DWERCANEST_18 = new ol.layer.Vector({
+jsonSource_DWERMURHAR_18.addFeatures(features_DWERMURHAR_18);
+var lyr_DWERMURHAR_18 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_DWERCANEST_18, 
-                style: style_DWERCANEST_18,
+                source:jsonSource_DWERMURHAR_18, 
+                style: style_DWERMURHAR_18,
                 interactive: true,
-                title: '<img src="styles/legend/DWERCANEST_18.png" /> DWER-CANEST'
+                title: '<img src="styles/legend/DWERMURHAR_18.png" /> DWER-MURHAR'
             });
-var format_DPIRDCRP_19 = new ol.format.GeoJSON();
-var features_DPIRDCRP_19 = format_DPIRDCRP_19.readFeatures(json_DPIRDCRP_19, 
+var format_DWERCSMWQ_19 = new ol.format.GeoJSON();
+var features_DWERCSMWQ_19 = format_DWERCSMWQ_19.readFeatures(json_DWERCSMWQ_19, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_DPIRDCRP_19 = new ol.source.Vector({
+var jsonSource_DWERCSMWQ_19 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_DPIRDCRP_19.addFeatures(features_DPIRDCRP_19);
-var lyr_DPIRDCRP_19 = new ol.layer.Vector({
+jsonSource_DWERCSMWQ_19.addFeatures(features_DWERCSMWQ_19);
+var lyr_DWERCSMWQ_19 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_DPIRDCRP_19, 
-                style: style_DPIRDCRP_19,
+                source:jsonSource_DWERCSMWQ_19, 
+                style: style_DWERCSMWQ_19,
                 interactive: true,
-                title: '<img src="styles/legend/DPIRDCRP_19.png" /> DPIRD-CRP'
+                title: '<img src="styles/legend/DWERCSMWQ_19.png" /> DWER-CSMWQ'
             });
-var format_DOTTIDE_20 = new ol.format.GeoJSON();
-var features_DOTTIDE_20 = format_DOTTIDE_20.readFeatures(json_DOTTIDE_20, 
+var format_DWERCSMOORING_20 = new ol.format.GeoJSON();
+var features_DWERCSMOORING_20 = format_DWERCSMOORING_20.readFeatures(json_DWERCSMOORING_20, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_DOTTIDE_20 = new ol.source.Vector({
+var jsonSource_DWERCSMOORING_20 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_DOTTIDE_20.addFeatures(features_DOTTIDE_20);
-var lyr_DOTTIDE_20 = new ol.layer.Vector({
+jsonSource_DWERCSMOORING_20.addFeatures(features_DWERCSMOORING_20);
+var lyr_DWERCSMOORING_20 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_DOTTIDE_20, 
-                style: style_DOTTIDE_20,
+                source:jsonSource_DWERCSMOORING_20, 
+                style: style_DWERCSMOORING_20,
                 interactive: true,
-                title: '<img src="styles/legend/DOTTIDE_20.png" /> DOT-TIDE'
+                title: '<img src="styles/legend/DWERCSMOORING_20.png" /> DWER-CSMOORING'
             });
-var format_CSMCWQ_21 = new ol.format.GeoJSON();
-var features_CSMCWQ_21 = format_CSMCWQ_21.readFeatures(json_CSMCWQ_21, 
+var format_DWERCANEST_21 = new ol.format.GeoJSON();
+var features_DWERCANEST_21 = format_DWERCANEST_21.readFeatures(json_DWERCANEST_21, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_CSMCWQ_21 = new ol.source.Vector({
+var jsonSource_DWERCANEST_21 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_CSMCWQ_21.addFeatures(features_CSMCWQ_21);
-var lyr_CSMCWQ_21 = new ol.layer.Vector({
+jsonSource_DWERCANEST_21.addFeatures(features_DWERCANEST_21);
+var lyr_DWERCANEST_21 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_CSMCWQ_21, 
-                style: style_CSMCWQ_21,
+                source:jsonSource_DWERCANEST_21, 
+                style: style_DWERCANEST_21,
                 interactive: true,
-                title: '<img src="styles/legend/CSMCWQ_21.png" /> CSMC-WQ'
+                title: '<img src="styles/legend/DWERCANEST_21.png" /> DWER-CANEST'
             });
-var format_BOMIDY_22 = new ol.format.GeoJSON();
-var features_BOMIDY_22 = format_BOMIDY_22.readFeatures(json_BOMIDY_22, 
+var format_DPIRDCRP_22 = new ol.format.GeoJSON();
+var features_DPIRDCRP_22 = format_DPIRDCRP_22.readFeatures(json_DPIRDCRP_22, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_BOMIDY_22 = new ol.source.Vector({
+var jsonSource_DPIRDCRP_22 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_BOMIDY_22.addFeatures(features_BOMIDY_22);
-var lyr_BOMIDY_22 = new ol.layer.Vector({
+jsonSource_DPIRDCRP_22.addFeatures(features_DPIRDCRP_22);
+var lyr_DPIRDCRP_22 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_BOMIDY_22, 
-                style: style_BOMIDY_22,
+                source:jsonSource_DPIRDCRP_22, 
+                style: style_DPIRDCRP_22,
                 interactive: true,
-                title: '<img src="styles/legend/BOMIDY_22.png" /> BOM-IDY'
+                title: '<img src="styles/legend/DPIRDCRP_22.png" /> DPIRD-CRP'
             });
-var group_DataAgencies = new ol.layer.Group({
-                                layers: [lyr_WWMSP51WQ_3,lyr_WWMSP51MET_4,lyr_WWMSP51AWAC_5,lyr_WWMSP22Seagrass_6,lyr_WWMSP22Light_7,lyr_WCWAPSDPBMT349_8,lyr_WCWAPSDP12_9,lyr_WCBMT_10,lyr_IMOSBGC_11,lyr_IMOSANMNCTD_12,lyr_FPAMQMP_13,lyr_DWERSWANEST_14,lyr_DWERSWANCATCH_15,lyr_DWERCSMWQ_16,lyr_DWERCSMOORING_17,lyr_DWERCANEST_18,lyr_DPIRDCRP_19,lyr_DOTTIDE_20,lyr_CSMCWQ_21,lyr_BOMIDY_22,],
-                                title: "Data Agencies"});
+var format_DOTTIDE_23 = new ol.format.GeoJSON();
+var features_DOTTIDE_23 = format_DOTTIDE_23.readFeatures(json_DOTTIDE_23, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_DOTTIDE_23 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_DOTTIDE_23.addFeatures(features_DOTTIDE_23);
+var lyr_DOTTIDE_23 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_DOTTIDE_23, 
+                style: style_DOTTIDE_23,
+                interactive: true,
+                title: '<img src="styles/legend/DOTTIDE_23.png" /> DOT-TIDE'
+            });
+var format_CSMCWQ_24 = new ol.format.GeoJSON();
+var features_CSMCWQ_24 = format_CSMCWQ_24.readFeatures(json_CSMCWQ_24, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_CSMCWQ_24 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_CSMCWQ_24.addFeatures(features_CSMCWQ_24);
+var lyr_CSMCWQ_24 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_CSMCWQ_24, 
+                style: style_CSMCWQ_24,
+                interactive: true,
+                title: '<img src="styles/legend/CSMCWQ_24.png" /> CSMC-WQ'
+            });
+var format_BOMIDY_25 = new ol.format.GeoJSON();
+var features_BOMIDY_25 = format_BOMIDY_25.readFeatures(json_BOMIDY_25, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_BOMIDY_25 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_BOMIDY_25.addFeatures(features_BOMIDY_25);
+var lyr_BOMIDY_25 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_BOMIDY_25, 
+                style: style_BOMIDY_25,
+                interactive: true,
+                title: '<img src="styles/legend/BOMIDY_25.png" /> BOM-IDY'
+            });
+var group_DataAgency = new ol.layer.Group({
+                                layers: [lyr_WWMSP51WQ_3,lyr_WWMSP51MET_4,lyr_WWMSP51AWAC_5,lyr_WWMSP22Seagrass_6,lyr_WWMSP22Light_7,lyr_WCWAPSDPBMT349_8,lyr_WCWAPSDP12_9,lyr_WCBMT_10,lyr_IMOSBGC_11,lyr_IMOSANMNCTD_12,lyr_IMOSANMNADCP_13,lyr_FPAMQMP_14,lyr_DWERSWANEST_15,lyr_DWERSWANCATCH_16,lyr_DWERPHESTREACH_17,lyr_DWERMURHAR_18,lyr_DWERCSMWQ_19,lyr_DWERCSMOORING_20,lyr_DWERCANEST_21,lyr_DPIRDCRP_22,lyr_DOTTIDE_23,lyr_CSMCWQ_24,lyr_BOMIDY_25,],
+                                title: "Data Agency"});
 var group_Basemaps = new ol.layer.Group({
                                 layers: [lyr_GoogleSatellite_0,lyr_ESRIGraylight_1,lyr_MLAUZones_2,],
                                 title: "Basemaps"});
 
-lyr_GoogleSatellite_0.setVisible(true);lyr_ESRIGraylight_1.setVisible(true);lyr_MLAUZones_2.setVisible(true);lyr_WWMSP51WQ_3.setVisible(true);lyr_WWMSP51MET_4.setVisible(true);lyr_WWMSP51AWAC_5.setVisible(true);lyr_WWMSP22Seagrass_6.setVisible(true);lyr_WWMSP22Light_7.setVisible(true);lyr_WCWAPSDPBMT349_8.setVisible(true);lyr_WCWAPSDP12_9.setVisible(true);lyr_WCBMT_10.setVisible(true);lyr_IMOSBGC_11.setVisible(true);lyr_IMOSANMNCTD_12.setVisible(true);lyr_FPAMQMP_13.setVisible(true);lyr_DWERSWANEST_14.setVisible(true);lyr_DWERSWANCATCH_15.setVisible(true);lyr_DWERCSMWQ_16.setVisible(true);lyr_DWERCSMOORING_17.setVisible(true);lyr_DWERCANEST_18.setVisible(true);lyr_DPIRDCRP_19.setVisible(true);lyr_DOTTIDE_20.setVisible(true);lyr_CSMCWQ_21.setVisible(true);lyr_BOMIDY_22.setVisible(true);
-var layersList = [group_Basemaps,group_DataAgencies];
+lyr_GoogleSatellite_0.setVisible(true);lyr_ESRIGraylight_1.setVisible(true);lyr_MLAUZones_2.setVisible(true);lyr_WWMSP51WQ_3.setVisible(true);lyr_WWMSP51MET_4.setVisible(true);lyr_WWMSP51AWAC_5.setVisible(true);lyr_WWMSP22Seagrass_6.setVisible(true);lyr_WWMSP22Light_7.setVisible(true);lyr_WCWAPSDPBMT349_8.setVisible(true);lyr_WCWAPSDP12_9.setVisible(true);lyr_WCBMT_10.setVisible(true);lyr_IMOSBGC_11.setVisible(true);lyr_IMOSANMNCTD_12.setVisible(true);lyr_IMOSANMNADCP_13.setVisible(true);lyr_FPAMQMP_14.setVisible(true);lyr_DWERSWANEST_15.setVisible(true);lyr_DWERSWANCATCH_16.setVisible(true);lyr_DWERPHESTREACH_17.setVisible(true);lyr_DWERMURHAR_18.setVisible(true);lyr_DWERCSMWQ_19.setVisible(true);lyr_DWERCSMOORING_20.setVisible(true);lyr_DWERCANEST_21.setVisible(true);lyr_DPIRDCRP_22.setVisible(true);lyr_DOTTIDE_23.setVisible(true);lyr_CSMCWQ_24.setVisible(true);lyr_BOMIDY_25.setVisible(true);
+var layersList = [group_Basemaps,group_DataAgency];
 lyr_MLAUZones_2.set('fieldAliases', {'Unit_Name': 'Unit_Name', 'Name': 'Name', 'Plot_Order': 'Plot_Order', 'BP_Region': 'BP_Region', 'BP_Order': 'BP_Order', });
 lyr_WWMSP51WQ_3.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
 lyr_WWMSP51MET_4.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
@@ -338,16 +380,19 @@ lyr_WCWAPSDP12_9.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Nam
 lyr_WCBMT_10.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
 lyr_IMOSBGC_11.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
 lyr_IMOSANMNCTD_12.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
-lyr_FPAMQMP_13.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
-lyr_DWERSWANEST_14.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
-lyr_DWERSWANCATCH_15.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
-lyr_DWERCSMWQ_16.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
-lyr_DWERCSMOORING_17.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
-lyr_DWERCANEST_18.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
-lyr_DPIRDCRP_19.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
-lyr_DOTTIDE_20.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
-lyr_CSMCWQ_21.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
-lyr_BOMIDY_22.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
+lyr_IMOSANMNADCP_13.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
+lyr_FPAMQMP_14.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
+lyr_DWERSWANEST_15.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
+lyr_DWERSWANCATCH_16.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
+lyr_DWERPHESTREACH_17.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
+lyr_DWERMURHAR_18.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
+lyr_DWERCSMWQ_19.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
+lyr_DWERCSMOORING_20.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
+lyr_DWERCANEST_21.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
+lyr_DPIRDCRP_22.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
+lyr_DOTTIDE_23.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
+lyr_CSMCWQ_24.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
+lyr_BOMIDY_25.set('fieldAliases', {'Agency_Name': 'Agency_Name', 'Program_Name': 'Program_Name', 'Station_ID': 'Station_ID', 'Site_Description': 'Site_Description', 'Tag': 'Tag', 'mAHD': 'mAHD', 'Lat': 'Lat', 'Lon': 'Lon', 'Label': 'Label', });
 lyr_MLAUZones_2.set('fieldImages', {'Unit_Name': 'TextEdit', 'Name': 'TextEdit', 'Plot_Order': 'Range', 'BP_Region': 'TextEdit', 'BP_Order': 'Range', });
 lyr_WWMSP51WQ_3.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
 lyr_WWMSP51MET_4.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
@@ -359,16 +404,19 @@ lyr_WCWAPSDP12_9.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Sta
 lyr_WCBMT_10.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
 lyr_IMOSBGC_11.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
 lyr_IMOSANMNCTD_12.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
-lyr_FPAMQMP_13.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
-lyr_DWERSWANEST_14.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
-lyr_DWERSWANCATCH_15.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
-lyr_DWERCSMWQ_16.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
-lyr_DWERCSMOORING_17.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
-lyr_DWERCANEST_18.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
-lyr_DPIRDCRP_19.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
-lyr_DOTTIDE_20.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
-lyr_CSMCWQ_21.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
-lyr_BOMIDY_22.set('fieldImages', {'Agency_Name': 'TextEdit', 'Program_Name': 'TextEdit', 'Station_ID': 'Range', 'Site_Description': 'TextEdit', 'Tag': 'TextEdit', 'mAHD': 'TextEdit', 'Lat': 'TextEdit', 'Lon': 'TextEdit', 'Label': 'Range', });
+lyr_IMOSANMNADCP_13.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
+lyr_FPAMQMP_14.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
+lyr_DWERSWANEST_15.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
+lyr_DWERSWANCATCH_16.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
+lyr_DWERPHESTREACH_17.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
+lyr_DWERMURHAR_18.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
+lyr_DWERCSMWQ_19.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
+lyr_DWERCSMOORING_20.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
+lyr_DWERCANEST_21.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
+lyr_DPIRDCRP_22.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
+lyr_DOTTIDE_23.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
+lyr_CSMCWQ_24.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
+lyr_BOMIDY_25.set('fieldImages', {'Agency_Name': '', 'Program_Name': '', 'Station_ID': '', 'Site_Description': '', 'Tag': '', 'mAHD': '', 'Lat': '', 'Lon': '', 'Label': '', });
 lyr_MLAUZones_2.set('fieldLabels', {});
 lyr_WWMSP51WQ_3.set('fieldLabels', {});
 lyr_WWMSP51MET_4.set('fieldLabels', {});
@@ -380,16 +428,19 @@ lyr_WCWAPSDP12_9.set('fieldLabels', {});
 lyr_WCBMT_10.set('fieldLabels', {});
 lyr_IMOSBGC_11.set('fieldLabels', {});
 lyr_IMOSANMNCTD_12.set('fieldLabels', {});
-lyr_FPAMQMP_13.set('fieldLabels', {});
-lyr_DWERSWANEST_14.set('fieldLabels', {});
-lyr_DWERSWANCATCH_15.set('fieldLabels', {});
-lyr_DWERCSMWQ_16.set('fieldLabels', {});
-lyr_DWERCSMOORING_17.set('fieldLabels', {});
-lyr_DWERCANEST_18.set('fieldLabels', {});
-lyr_DPIRDCRP_19.set('fieldLabels', {});
-lyr_DOTTIDE_20.set('fieldLabels', {});
-lyr_CSMCWQ_21.set('fieldLabels', {});
-lyr_BOMIDY_22.set('fieldLabels', {});
-lyr_BOMIDY_22.on('precompose', function(evt) {
+lyr_IMOSANMNADCP_13.set('fieldLabels', {});
+lyr_FPAMQMP_14.set('fieldLabels', {});
+lyr_DWERSWANEST_15.set('fieldLabels', {});
+lyr_DWERSWANCATCH_16.set('fieldLabels', {});
+lyr_DWERPHESTREACH_17.set('fieldLabels', {});
+lyr_DWERMURHAR_18.set('fieldLabels', {});
+lyr_DWERCSMWQ_19.set('fieldLabels', {});
+lyr_DWERCSMOORING_20.set('fieldLabels', {});
+lyr_DWERCANEST_21.set('fieldLabels', {});
+lyr_DPIRDCRP_22.set('fieldLabels', {});
+lyr_DOTTIDE_23.set('fieldLabels', {});
+lyr_CSMCWQ_24.set('fieldLabels', {});
+lyr_BOMIDY_25.set('fieldLabels', {});
+lyr_BOMIDY_25.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
